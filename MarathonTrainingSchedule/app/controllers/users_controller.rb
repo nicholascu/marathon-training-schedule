@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_filter :save_login_state, :only => [:new, :create]
   # GET /users
   # GET /users.json
   def index
@@ -79,5 +80,10 @@ class UsersController < ApplicationController
       format.html { redirect_to users_url }
       format.json { head :no_content }
     end
+  end
+
+  def logout
+    session[:user_id] = nil
+    redirect_to :action => 'login'
   end
 end
