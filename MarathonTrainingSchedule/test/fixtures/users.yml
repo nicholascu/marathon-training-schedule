@@ -9,5 +9,5 @@ two:
   email: MyString
 
 nic: 
-	name: nic
-	email: nic@nic.com
+  name: nic
+  email: nic@nic.com
