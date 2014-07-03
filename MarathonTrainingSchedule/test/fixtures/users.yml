@@ -7,3 +7,7 @@ one:
 two:
   name: MyString
   email: MyString
+
+nic: 
+  name: nic
+  email: nic@nic.com
