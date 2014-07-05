@@ -1,6 +1,10 @@
 MarathonTrainingSchedule::Application.routes.draw do
   get "sessions/login"
 
+  post "sessions/login"
+
+  post "sessions/login_attempt"
+
   get "sessions/logout"
 
   resources :users

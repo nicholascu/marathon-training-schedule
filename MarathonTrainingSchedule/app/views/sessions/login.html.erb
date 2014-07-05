@@ -1,4 +1,4 @@
-  <%= form_for(:session, url: sessions_login_path) do |f| %>
+  <%= form_for(:session, url: sessions_login_attempt_path) do |f| %>
     Username: <%= f.text_field :username, autofocus: true, placeholder: "username", autofocus: true %><br />
     Password: <%= f.password_field :password, placeholder: "password" %><br />
 
