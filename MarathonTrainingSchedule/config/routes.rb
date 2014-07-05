@@ -1,4 +1,8 @@
 MarathonTrainingSchedule::Application.routes.draw do
+  get "sessions/login"
+
+  get "sessions/logout"
+
   resources :users
 
 
