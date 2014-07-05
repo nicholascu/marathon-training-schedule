@@ -1,2 +1,6 @@
-<h1>Sessions#login</h1>
-<p>Find me in app/views/sessions/login.html.erb</p>
+  <%= form_for(:session, url: sessions_login_path) do |f| %>
+    Username: <%= f.text_field :username, autofocus: true, placeholder: "username", autofocus: true %><br />
+    Password: <%= f.password_field :password, placeholder: "password" %><br />
+
+    <%= f.submit "Log In", :class => "homepage-button" %>
+  <% end %>
